@@ -1,0 +1,13 @@
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    #algorithm: PBEWITHHMACSHA512ANDAES_256
+    password: ${ENCRYPTION_PASSWORD:changeit}
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+
+
+
+mysecret: ENC(9SwlusImvwmQ0MRzzcvuVw==)   # one123
+mysecret_two: ENC(CJ9f3BqC3tSFQnHtwKNoXg==)  # two
+mysecret_0: simple_secret
